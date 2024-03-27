@@ -1,0 +1,43 @@
+.ft-message{
+    font-size: 14px;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.ft-date{
+    font-size: 10px;
+    color: gray;
+}
+
+.form-input{
+    border-radius: 3px;
+}
+
+.form-button{
+    border-radius: 4px;
+    background: none;
+    border-width: 0;
+    color: #9CE7ED;
+    font-weight: bold;
+}
+
+.chat{
+    border-radius: 6px;
+}
+
+.scroll{
+    overflow-y: auto;
+    max-height: 500px;
+    background: #FAF9F9;
+    overflow-x: hidden;
+}
+
+.chat-form-bg{
+    background: #FAF9F9;
+}
+
+.first-btn{
+    border-width: 0;
+    background: none;
+    color: #589e73;
+}
