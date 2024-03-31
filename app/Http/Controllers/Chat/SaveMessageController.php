@@ -8,6 +8,10 @@ use App\Models\ChatMessage;
 class SaveMessageController extends BaseController
 {
     public function index(Request $req){
+        $req->validate([
+            'message' => 'required|max:255',
+            'name' => 'required',
+        ]);
 
         ChatMessage::create(['user'=>$req->name, "message"=>$req->message]);
 
