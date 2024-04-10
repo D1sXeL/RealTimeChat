@@ -1,14 +1,6 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Авторизация</title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
+@section('content')
     <section class="container py-5">
         <form action="{{ route('auth.name') }}" method="post">
             @csrf
@@ -21,5 +13,4 @@
             <p style="color: red; font-size: 20px">{{$error}}</p>
         @endif
     </section>
-</body>
-</html>
+@endsection
